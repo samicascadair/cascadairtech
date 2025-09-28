@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CascadAir Inc. — Bientôt</title>
+  <meta name="description" content="CascadAir Inc. — Éolienne modulaire haute efficacité. Page d’attente officielle." />
+  <meta name="theme-color" content="#05c1c4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1b1b" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CascadAir Inc. — Bientôt">
+  <meta property="og:description" content="Éolienne modulaire haute efficacité. Restez informé du lancement.">
+  <meta property="og:image" content="https://example.com/og.png">
+  <meta property="og:locale" content="fr_CA">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root{--brand-a:#14b866;--brand-b:#05c1c4;--ink:#0b1b1b;--muted:#3b5a5a;--bg:#f6fbfb}
+    html,body{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:radial-gradient(1200px 800px at 75% -10%, rgba(5,193,196,.12), transparent 60%),radial-gradient(1000px 600px at -10% 90%, rgba(20,184,102,.10), transparent 55%),var(--bg)}
+    .wrap{min-height:100%;display:grid;place-items:center;padding:6vw 5vw}
+    .card{position:relative;max-width:960px;width:min(92vw,900px);background:rgba(255,255,255,.72);backdrop-filter:blur(8px);border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.06),inset 0 1px 0 rgba(255,255,255,.5);padding:clamp(28px,4vw,56px);text-align:center;overflow:hidden}
+    .card::before{content:'';position:absolute;inset:-20% -10% -40% -10%;background:radial-gradient(60% 60% at 50% 0%, rgba(5,193,196,.18), transparent 60%),radial-gradient(60% 60% at 50% 100%, rgba(20,184,102,.14), transparent 60%);z-index:0}
+    .brand{position:relative;z-index:1;display:grid;gap:26px;justify-items:center}
+    .logo{width:min(76vw,360px);height:auto;display:block;filter:drop-shadow(0 8px 16px rgba(0,0,0,.08));animation:float 6s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    .title{font-weight:600;font-size:clamp(24px,3.4vw,36px);letter-spacing:.2px}
+    .subtitle{color:var(--muted);font-size:clamp(15px,1.6vw,18px);line-height:1.5;max-width:56ch}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+    .btn{appearance:none;border:0;cursor:pointer;font-weight:600;letter-spacing:.2px;border-radius:14px;padding:12px 18px;transition:transform .15s ease, box-shadow .15s ease, background .15s ease}
+    .btn-primary{background:linear-gradient(90deg,var(--brand-a),var(--brand-b));color:#fff;box-shadow:0 6px 20px rgba(5,193,196,.28)}
+    .btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(5,193,196,.34)}
+    .btn-ghost{background:rgba(5,193,196,.08);color:var(--ink)}
+    .btn-ghost:hover{background:rgba(5,193,196,.12)}
+    .meta{margin-top:16px;font-size:13px;color:#547}
+    .wind{position:absolute;inset:0;pointer-events:none;z-index:0;mask-image:radial-gradient(120% 120% at 50% 50%, black, transparent 70%);opacity:.5}
+    .wind svg{position:absolute;width:120%;left:-10%;top:0;height:100%}
+    .wind path{stroke:url(#windGrad);stroke-width:1.2;fill:none;opacity:.5}
+    .wind path:nth-child(odd){animation:breeze 10s linear infinite}.wind path:nth-child(even){animation:breeze 12s linear infinite reverse}
+    @keyframes breeze{to{transform:translateX(6%)}}
+    footer{margin-top:24px;font-size:13px;color:#466}footer a{color:inherit;text-underline-offset:3px}
+    @media (prefers-reduced-motion: reduce){.logo{animation:none}.wind path{animation:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main" aria-labelledby="title">
+      <div class="wind" aria-hidden="true">
+        <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="windGrad" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#14b866"/><stop offset="100%" stop-color="#05c1c4"/>
+            </linearGradient>
+          </defs>
+          <path d="M-50 60 C 120 40, 240 80, 410 60 S 700 40, 1000 60"/>
+          <path d="M-50 120 C 120 100, 240 140, 410 120 S 700 100, 1000 120"/>
+          <path d="M-50 180 C 120 160, 240 200, 410 180 S 700 160, 1000 180"/>
+        </svg>
+      </div>
+
+      <section class="brand">
+        <img class="logo" src="logo.svg" alt="CascadAir Inc. — logo" width="360" height="auto" />
+        <h1 id="title" class="title">COMING SOON · BIENTÔT</h1>
+        <p class="subtitle">Nous concevons une éolienne modulaire haute performance pour capter plus d’énergie du vent, partout. Restez informé du lancement.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:contact@cascadair.com?subject=Inscription%20liste%20d%27attente">Me prévenir au lancement</a>
+          <a class="btn btn-ghost" href="#" aria-disabled="true">Livre blanc (bientôt)</a>
+        </div>
+        <div class="meta">© 2025 CascadAir Inc. · Québec, Canada</div>
+      </section>
+    </main>
+    <footer>
+      <!--Besoin d’un logo monochrome ou inversé ? Écrivez-nous — nous fournissons les déclinaisons officielles.-->
+    </footer>
+  </div>
+</body>
+</html>

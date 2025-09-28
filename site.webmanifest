@@ -1,0 +1,15 @@
+{
+  "name": "CascadAir Inc.",
+  "short_name": "CascadAir",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6fbfb",
+  "theme_color": "#05c1c4",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
